@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Invertendo números inteiros</h1>
+    <div>1º Nº Inteiro: <input type="number" name="n1" id="n1"></div>
+    <div>2º Nº Inteiro: <input type="number" name="n2" id="n2"></div>
+    <input type="button" value="Trocar Variáveis e exibir" onclick="trocar()">
+
+    <script>
+        function trocar(){
+        var n1 = Number.parseInt(document.getElementById('n1').value)
+        var n2 = Number.parseInt(document.getElementById('n2').value)
+        var aux = n1;
+        aux=n2;
+        n2=n1;
+       
+
+        alert("Antes:\n"+
+        "numero1="+document.getElementById("n1").value+"\n"+
+        "numero2="+document.getElementById("n2").value+"\n\n"+
+        "Invertido:\n"+
+        "numero1="+aux+"\n"+
+        "numero2="+n2+"\n\n");
+    }
+
+        
+
+
+    </script>
+
+
+</body>
+</html>
